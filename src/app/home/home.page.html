@@ -1,12 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="secondary">
     <ion-buttons slot="secondary">
-      <ion-button>
+
+      <ion-button routerLink="/perfil">
         <ion-icon slot="icon-only" name="person-circle"></ion-icon>
       </ion-button>
+
       <ion-button>
         <ion-icon slot="icon-only" name="search"></ion-icon>
       </ion-button>
+
     </ion-buttons>
     <ion-buttons slot="primary">
       <ion-button color="primary">
@@ -15,37 +18,31 @@
     </ion-buttons>
     <ion-title>PromoAqui</ion-title>
   </ion-toolbar>
-
-
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <div>
-
+  <div class="centerTexto">
     <strong><h1>Quem não gosta de algumas promoções certo?</h1></strong>
     <h5>Aqui vou te disponibilizar as melhores promoções do momento, venha conferir!</h5>
-  
-  </div>
+    </div>
 
+  <div class="centerTexto">
   <ion-card>
     <ion-card-header>
-      
+
         <img src="https://a-static.mlcdn.com.br/450x450/smart-tv-led-32-tcl-32s6500s-android-wi-fi-hdr-inteligencia-artificial-2-hdmi-usb/magazineluiza/193425100/5795951db13a79719ca35d603ff7913b.jpg"/>
-      
+
       <ion-item>
-      
-        <ion-card-title><ion-icon name="desktop-outline"></ion-icon> Smart TV SEMP TCL</ion-card-title>
-      
+       <ion-card-title class="centerTitulo"><ion-icon name="desktop-outline"></ion-icon> Smart TV SEMP TCL</ion-card-title>
       </ion-item>
 
     </ion-card-header>
-  
     <ion-card-content>
-    
-    Uma Smart TV SEMP TCL com 32 polegadas e HDR
-    Possui integração com Google Assistant, wifi e bordas finas!
-    
+
+    <p>Uma Smart TV SEMP TCL com 32 polegadas e HDR
+    Possui integração com Google Assistant, wifi e bordas finas!</p>
+
       <a href="https://www.kabum.com.br/produto/169835/smart-tv-semp-tcl-led-32-hdr-1366x768-hd-usb-hdmi-wi-fi-60hz-google-assistant-borda-fina-android-cts-preto-32s615">
         <ion-button size="small">
           R$ 1.399,00
@@ -53,11 +50,64 @@
         </ion-button>
       </a>
 
+    </ion-card-content>
+  </ion-card>
+ </div>
+
+ <div class="centerTexto">
+  <ion-card>
+    <ion-card-header>
+
+        <img src="https://images.kabum.com.br/produtos/fotos/171456/headset-gamer-razer-kraken-v3-x-usb-chroma-rgb-surround-7-1-drivers-40mm-rz04-03750100-r3u1_1626445754_gg.jpg"/>
+
+      <ion-item>
+       <ion-card-title class="centerTitulo"><ion-icon name="headset-outline"></ion-icon> Headset Gamer Razer Kraken</ion-card-title>
+      </ion-item>
+
+    </ion-card-header>
+    <ion-card-content>
+
+    <p>Headset Gamer Razer Kraken V3 X USB Chroma RGB Conforto Ultra-leve para Imersão Nos Jogos Viva
+      uma imersão completa sem sentir o peso – apresentamos o Razer Kraken V3 X, um headset gamer para
+      PC que permite que você jogue por muito, muito, muito tempo.</p>
+
+      <a href="https://www.kabum.com.br/produto/171456/headset-gamer-razer-kraken-v3-x-usb-chroma-rgb-surround-7-1-drivers-40mm-rz04-03750100-r3u1">
+        <ion-button size="small">
+          R$ 699,00
+        <ion-icon slot="end" name="star"></ion-icon>
+        </ion-button>
+      </a>
 
     </ion-card-content>
   </ion-card>
+ </div>
 
+ <div class="centerTexto">
+  <ion-card>
+    <ion-card-header>
 
+        <img src="https://images-americanas.b2w.io/produtos/3947128779/imagens/video-game-playstation-5-ps5-825gb-sony/3947128787_1_xlarge.jpg"/>
+
+      <ion-item>
+       <ion-card-title class="centerTitulo"><ion-icon name="game-controller-outline"></ion-icon> Video Game Playstation 5 PS5 825GB Sony</ion-card-title>
+      </ion-item>
+
+    </ion-card-header>
+    <ion-card-content>
+
+    <p>A Sony agora com tudo o que um gamer sempre sonhou. Um um sistema poderoso e capacidade para rodar os melhores e exclusivos jogos!
+      Curta seu ssd de altíssima velocidade, uma imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e áudio 3D, além de uma geração inédita de jogos incríveis para PlayStation.</p>
+
+      <a href="https://www.americanas.com.br/produto/3947128779?sellerId=9313141000139&epar=bp_pl_00_go_gm_jogos_todas_geral_gmv&opn=YSMESP&WT.srch=1&gclid=EAIaIQobChMI-O-Xlaui8wIVEfjICh0-zQTgEAQYASABEgLoZPD_BwE&cor=Branco&voltagem=Bivolt#info-section">
+        <ion-button size="small">
+          R$ 5.699,00
+        <ion-icon slot="end" name="star"></ion-icon>
+        </ion-button>
+      </a>
+
+    </ion-card-content>
+  </ion-card>
+ </div>
 
 <!-- a partir daqui são testes que eu fiz para ver como funciona, é um pouco mais bonito que os acima
 porque eu copiei dos sites -->
@@ -66,9 +116,9 @@ porque eu copiei dos sites -->
     <ion-item>
       <ion-icon name="desktop-outline"></ion-icon>
       <ion-label>ion-item in a card, icon left, button right</ion-label>
-      <ion-button fill="outline" slot="end">View</ion-button>
+      <!--<ion-button fill="outline" slot="end">View</ion-button>-->
     </ion-item>
-  
+
     <ion-card-content>
       This is content, without any paragraph or header tags,
       within an ion-card-content element.
