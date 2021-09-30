@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SemEstoquePage implements OnInit {
 
+  tituloSemEstoque:string = "Sem Estoque"
   constructor() { }
 
   ngOnInit() {
