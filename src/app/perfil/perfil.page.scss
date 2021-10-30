@@ -29,27 +29,14 @@
   .centerTexto {
     display: block;
     text-align: center;
-    background-color: aqua;
-    border-radius: 10px;
   }
   
   .centerTitulo{
     display: block;
     margin: 0 auto;
   }
-<<<<<<< HEAD
   
-  /* DOES NOT WORK - not specific enough */
-ion-loading {
-  color: green;
-}
-
-/* Works - pass "my-custom-class" in cssClass to increase specificity */
-.my-custom-class {
-  color: green;
-}
-=======
-  #email{
+  /* #email{
     border-color: black;
     border-radius: 10px;
     color: black;
@@ -61,5 +48,4 @@ ion-loading {
     border-radius: 5px;
     cursor: grab;
     transition: black;
-  }
->>>>>>> 09d1efd8f4c631c6678fcccc4b54a51414608182
+  } */
