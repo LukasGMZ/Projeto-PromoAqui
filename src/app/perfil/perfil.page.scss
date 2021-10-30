@@ -29,10 +29,24 @@
   .centerTexto {
     display: block;
     text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
   }
   
   .centerTitulo{
     display: block;
     margin: 0 auto;
   }
-  
+  #email{
+    border-color: black;
+    border-radius: 10px;
+    color: black;
+  }
+  .btn{
+    background-color: aqua;
+    color: white;
+    border-color: black;
+    border-radius: 5px;
+    cursor: grab;
+    transition: black;
+  }
