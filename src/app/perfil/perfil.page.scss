@@ -29,12 +29,15 @@
   .centerTexto {
     display: block;
     text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
   }
   
   .centerTitulo{
     display: block;
     margin: 0 auto;
   }
+<<<<<<< HEAD
   
   /* DOES NOT WORK - not specific enough */
 ion-loading {
@@ -45,3 +48,18 @@ ion-loading {
 .my-custom-class {
   color: green;
 }
+=======
+  #email{
+    border-color: black;
+    border-radius: 10px;
+    color: black;
+  }
+  .btn{
+    background-color: aqua;
+    color: white;
+    border-color: black;
+    border-radius: 5px;
+    cursor: grab;
+    transition: black;
+  }
+>>>>>>> 09d1efd8f4c631c6678fcccc4b54a51414608182
