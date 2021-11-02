@@ -13,8 +13,8 @@ export class PerfilPage implements OnInit {
 
   async presentToast() {
     const toast = await this.toastController.create({
-      message: 'Your settings have been saved.',
-      duration: 2000,
+      message: 'email vinculado com sucesso.',
+      duration: 3000,
       color: 'danger',
       position: 'bottom'
       //popup rodape

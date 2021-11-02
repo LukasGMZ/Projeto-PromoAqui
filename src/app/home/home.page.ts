@@ -13,8 +13,8 @@ export class HomePage {
 
   async presentToast() {
     const toast = await this.toastController.create({
-      message: 'Your settings have been saved.',
-      duration: 2000,
+      message: '                          Promoção já encerrou!! :(',
+      duration: 3000,
       color: 'danger',
       position: 'middle'
       //popup rodape
