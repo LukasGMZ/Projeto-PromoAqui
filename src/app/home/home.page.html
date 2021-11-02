@@ -1,21 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="secondary">
+
     <ion-buttons slot="secondary">
 
       <ion-button routerLink="/perfil">
         <ion-icon slot="icon-only" name="person-circle"></ion-icon>
       </ion-button>
 
-
     </ion-buttons>
+
     <ion-buttons slot="primary">
-      <ion-button color="primary">
+
+      <ion-button routerLink="/adicionar">
         <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
       </ion-button>
+
     </ion-buttons>
+
     <ion-title>{{tituloHome}}</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<div class="centerTesto">
+
+</div>
 
 <ion-content [fullscreen]="true">
 
@@ -94,8 +102,8 @@
     <p>A Sony agora com tudo o que um gamer sempre sonhou. Um console poderoso com diversos jogos AAA exclusivos!
       Curta a velocidade do SSD, uma imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e áudio 3D incríveis.</p>
 
-      <a routerLink="/sem-estoque">
-        <ion-button  size="small">
+      <a>
+        <ion-button  size="small"(click)="presentToast()">
           R$ 5.699,00
         <ion-icon slot="end" name="star"></ion-icon>
         </ion-button>

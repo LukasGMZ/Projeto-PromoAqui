@@ -21,6 +21,11 @@
   
     margin: 0;
   }
+
+  .imput-email {
+    border: 1px solid;
+    border-radius: 10px;
+  }
   
   #container a {
     text-decoration: none;
@@ -29,6 +34,14 @@
   .centerTexto {
     display: block;
     text-align: center;
+  }
+
+  .centerButton{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 98%;
+    padding: 20px 20px 16px;
   }
   
   .centerTitulo{

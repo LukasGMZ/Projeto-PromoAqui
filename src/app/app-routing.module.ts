@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'sem-estoque',
     loadChildren: () => import('./sem-estoque/sem-estoque.module').then( m => m.SemEstoquePageModule)
   },
+  {
+    path: 'adicionar',
+    loadChildren: () => import('./adicionar/adicionar.module').then( m => m.AdicionarPageModule)
+  },
 
 ];
 
