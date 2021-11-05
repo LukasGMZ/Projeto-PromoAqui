@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
+import {Promocoes} from './../models/Promocoes'
 
 @Component({
   selector: 'app-perfil',
@@ -7,6 +8,8 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./perfil.page.scss'],
 })
 export class PerfilPage implements OnInit {
+
+  usuario: Promocoes = new Promocoes();
 
   tituloPerfil:string = "Perfil";
   constructor(public toastController: ToastController) {}
@@ -25,4 +28,12 @@ export class PerfilPage implements OnInit {
   ngOnInit() {
   }
 
-}
+  salvarPromo(){
+
+
+
+    }
+
+  }
+
+

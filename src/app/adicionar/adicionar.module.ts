@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { AdicionarPageRoutingModule } from './adicionar-routing.module';
 
 import { AdicionarPage } from './adicionar.page';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AdicionarPageRoutingModule
+    AdicionarPageRoutingModule,
+    HttpClientModule,
   ],
   declarations: [AdicionarPage]
 })
