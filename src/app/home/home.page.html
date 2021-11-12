@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+
+    <ion-buttons slot="secondary">
+
+      <ion-button routerLink="/perfil">
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
+    <ion-buttons slot="primary">
+
+      <ion-button routerLink="/adicionar">
+        <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
+    <ion-title>{{tituloHome}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="centerTexto">
+
+</div>
+
+<ion-content [fullscreen]="true">
+
+  <div class="centerTexto">
+    <strong><h1>Quem não gosta de algumas promoções certo?</h1></strong>
+    <h5>Aqui vou te disponibilizar as melhores promoções do momento, venha conferir!</h5>
+  </div>
+
+  <ion-list>
+    <ion-item *ngFor="let p of promocoes | async">
+      <div class="centerTexto">
+        <ion-card>
+          <ion-card-header>
+      
+              <img src="{{ p.imagem }}"/>
+      
+            <ion-item>
+             <ion-card-title class="centerTitulo"><ion-icon name="desktop-outline"></ion-icon> {{ p.produto }}</ion-card-title>
+            </ion-item>
+      
+          </ion-card-header>
+          <ion-card-content>
+      
+          <p>{{ p.descricao }}</p>
+      
+            <a href="{{ p.link }}">
+              <ion-button size="small">
+                {{ p.preco }}
+              <ion-icon slot="end" name="star"></ion-icon>
+              </ion-button>
+            </a>
+      
+          </ion-card-content>
+        </ion-card>
+       </div>
+    </ion-item>
+  </ion-list>
+  
+
+</ion-content>

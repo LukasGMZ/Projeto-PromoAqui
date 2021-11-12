@@ -1,0 +1,73 @@
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #c8ff00;
+  
+    margin: 0;
+  }
+
+  .imput-email {
+    border: 1px solid;
+    border-radius: 10px;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  .centerTexto {
+    display: block;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .corpoTexto {
+    display: block;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .centerButton{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px 16px;
+  }
+  
+  .centerTitulo{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* #email{
+    border-color: black;
+    border-radius: 10px;
+    color: black;
+  }
+  .btn{
+    background-color: aqua;
+    color: white;
+    border-color: black;
+    border-radius: 5px;
+    cursor: grab;
+    transition: black;
+  } */

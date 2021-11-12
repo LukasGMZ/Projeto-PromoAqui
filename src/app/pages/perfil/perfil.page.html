@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-button color="secondary" slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-button>
+
+    <ion-title>{{tituloPerfil}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="centerTexto">
+    <ion-card-header>
+
+    <h5>Ei, isso parece uma tela de login certo?</h5>
+    <h5>Mas olha só a surpresa, não é!</h5>
+    <h6>Para que você utilizar não é necessario ser cadastrado, preencha com um 
+    email e receba notificações sobre novas promoções.</h6>
+    <h6>Mas vale lembrar que isso é opcional.</h6>
+    
+    </ion-card-header>
+
+  </div>
+
+
+  <div class="centerButton">
+    <form [formGroup]="emailForm">
+      <ion-item class="imput-email">
+        <ion-label position="fixed">Email:</ion-label>
+        <ion-input placeholder="..." formControlName="email" autofocus="true" clearInput="true"></ion-input>
+      </ion-item>
+    </form>
+  
+    <ion-button style="margin-left:10px;" (click)="cadastraEmail()">Enviar</ion-button>
+
+  </div>
+
+</ion-content>

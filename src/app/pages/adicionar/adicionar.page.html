@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    
+    <ion-button color="secondary" slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-button>
+
+    <ion-title>Partilhe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class= centerTexto>
+
+    <h5>Eu sei que é bom ter promoções sempre, então que tal compartilhar conosco alguma que você encontrou?</h5>
+    <h5>Deste modo teremos sempre uma promoção boa aqui para todos.</h5>
+  
+  </div>
+
+<!--separando topo das caixas-->
+  <div class= corpoTexto>
+    <form [formGroup]="promocaoForm">
+
+      <div class="centerButton">
+        <ion-item class="imput-email">
+          <ion-label position="fixed">Produto:</ion-label>
+          <ion-input placeholder="Nome do item" formControlName="produto" clearInput="true"></ion-input>
+        </ion-item>
+      
+      </div>
+
+      <div class="centerButton">
+        <ion-item class="imput-email">
+          <ion-label position="fixed">Preço:</ion-label>
+          <ion-input placeholder="Ex: R$199,99" formControlName="preco" clearInput="true"></ion-input>
+        </ion-item>
+      
+      </div>
+
+      <div class="centerButton">
+        <ion-item class="imput-email">
+          <ion-label position="fixed">Link:</ion-label>
+          <ion-input placeholder="link do produto" formControlName="link" clearInput="true"></ion-input>
+        </ion-item>
+
+      </div>
+
+      <div class="centerButton">
+        <ion-item class="imput-email">
+          <ion-label position="fixed">Foto:</ion-label>
+          <ion-input placeholder="..." formControlName="imagem" clearInput="true"></ion-input>
+        </ion-item>
+
+      </div>
+
+      <div class="centerButton">
+        <ion-item class="imput-email">
+          <ion-label position="fixed">Descrição</ion-label>
+          <ion-input placeholder="Seja breve" formControlName="descricao" clearInput="true"></ion-input>
+        </ion-item>
+
+      </div>
+    </form>
+
+    <div class="centerTexto">
+      <ion-button (click)="adicionaPromocao()">Enviar</ion-button>
+    </div>
+
+    </div>
+
+</ion-content>

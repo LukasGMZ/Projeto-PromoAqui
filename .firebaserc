@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "testeproject-a0cc9": {
+      "hosting": {
+        "app": [
+          "testeproject-a0cc9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "testeproject-a0cc9"
+  }
+}
